@@ -19,13 +19,17 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+// Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('backend.index');
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RoleController::class);

@@ -1,0 +1,137 @@
+.header-style-two .navbar-wrap ul li a {
+    padding: 15px 6px!important;
+}
+.logo img {
+    max-height: 30px!important;
+   
+}
+
+ @media (max-width: 1200px) {
+
+    .header-style-two .navbar-wrap ul li a {
+   padding: 32px 8px;
+}
+}
+@media (max-width: 1048px) {
+
+    .header-style-two .navbar-wrap ul li a {
+        padding: 32px 8px!important;
+    }
+    .logo img {
+        max-height: 30px!important;
+       
+    }
+}
+
+@media (max-width: 720px){
+    .logo img {
+        max-height: 30px;
+        margin-top: 15px;
+    }
+     }
+ /* slider start */
+.slidercaption{
+    top: 230px;
+    width: 85%;
+}
+.sliderbtn{
+    width: 50%;
+   margin: 50px auto;
+}
+
+    /* Slider Zoom Effect */
+    @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(1, 1);
+        }
+        to {
+          -webkit-transform: scale(1.5, 1.5);
+        }
+      }
+      
+      @keyframes zoom {
+        from {
+          transform: scale(1, 1);
+        }
+        to {
+          transform: scale(1.5, 1.5);
+        }
+      }
+      
+      .carousel-inner .carousel-item > img {
+        -webkit-animation: zoom 20s;
+        animation: zoom 20s;
+      }
+.headertop_border{
+    border-left: 1px solid #fff;
+}
+
+/* news sticker  */
+.news-container {
+   
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+}
+
+.news-container .title {
+    position: absolute;
+    background: #df2020;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 200;
+    width: 15%;
+}
+
+.news-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    animation: scroll 25s infinite linear;
+}
+
+.news-container ul li {
+    white-space: nowrap;
+    padding: 10px 24px;
+    color: #494949;
+    position: relative;
+    font-weight: bold;
+}
+
+.news-container ul li::after {
+    content:"";
+    width: 1px;
+    height: 100%;
+    background: #b8b8b8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-container ul li:last-child::after {
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-1083px);
+    }
+}
+/* team memberstart  */
+  .meetteam img{
+    width: 100%;
+  }
+/* affiliation page  */
+.affialation-item{
+    min-height: 470px;
+}
+.membership a img{
+    width: 100%;
+}
