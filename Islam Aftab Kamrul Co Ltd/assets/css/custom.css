@@ -191,6 +191,15 @@
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    .chatbot{
+        right: 2px!important;
+        bottom:72px!important;
+    }
+    .chatbot img{
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+    }
     .slidercaption {
         top: 14px;
     }
@@ -222,6 +231,15 @@
     }
     .virtualtitle h1 {
         font-size: 25px;
+    }
+    .about-area-six {
+        padding: 0 0 34px;
+    }
+    .team-bg {
+        padding: 0px 0 6px;
+    }
+    .services-area-three {
+        padding: 0px 0 70px;
     }
  }
 
@@ -286,3 +304,41 @@ padding-top: 0px;
     } */
  }
 
+.whatsapp{
+    background-color: #0b6777;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    z-index: 999;
+    color: #fff;
+    padding: 10px;
+    left: 20px;
+    bottom: 15px;
+    border-radius: 28px;
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    line-height: 22px;
+    text-align: center;
+}
+.whatsapp a{
+    color: #fff; 
+}
+.chatbot{
+
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    z-index: 999;
+    color: #fff;
+    padding: 10px;
+    right: 56px;
+    bottom: 20px;
+   
+   
+}
+.chatbot img{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+}
