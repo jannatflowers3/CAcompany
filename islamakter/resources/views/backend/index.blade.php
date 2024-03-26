@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Dashboard</h1>
+          <h1 class="m-0">  ISLAM AFTAB KAMRUL & CO.</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -42,7 +42,7 @@
           <!-- small box -->
           <div class="small-box bg-success">
             <div class="inner">
-              <h3>2<sup style="font-size: 20px">%</sup></h3>
+              <h3>2<sup style="font-size: 20px"></sup></h3>
 
               <p>Total Users</p>
             </div>
@@ -88,7 +88,12 @@
       <!-- Main row -->
       <div class="row">
         <!-- Left col -->
-
+        <div class="col-lg-12 col-md-12 justify-content-center">
+            {{-- <h1>islam aftab</h1>
+            <p>ISLAM AFTAB KAMRUL & CO. Chartered Accountants was Established in 1993, under The Institute of Chartered Accountants of Bangladesh (ICAB) with a mission to continually add value by helping clients succeed.
+                Affiliated With -Key Will Group.</p> --}}
+                <img src="{{ asset('frontend/assets/images/slider1.jpg') }}" width="100%" height="600px" alt="logo">
+        </div>
       </div>
       <!-- /.row (main row) -->
     </div><!-- /.container-fluid -->

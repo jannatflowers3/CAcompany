@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Slider;
+use App\Models\ThemeOptions;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,10 +13,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -22,7 +24,8 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        return view('backend.index');
+    {    $seeting = ThemeOptions::findOrFail(1);
+        $slider = Slider::all();
+        return view('frontend.index',compact('seeting','slider'));
     }
 }

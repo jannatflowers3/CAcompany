@@ -241,6 +241,18 @@
     .services-area-three {
         padding: 0px 0 70px;
     }
+   .banner-follow-wrap {
+        display: block;
+        top: 38%;
+        right: -10px;
+        width: 42px;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+    .banner-follow-wrap .list-wrap{
+        display: none;
+    }
  }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -335,10 +347,14 @@ padding-top: 0px;
     right: 56px;
     bottom: 20px;
    
-   
 }
 .chatbot img{
     width: 40px;
     height: 40px;
     border-radius:50%;
+}
+.listwraplocation a i{ 
+    transform: translateY(-50%) rotate(90deg);
+    flex-direction: row-reverse;
+    text-align: center;
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>ISLAM AFTAB KAMRUL CO. Chartered Accountants</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -44,7 +44,7 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014 <a href="https://adminlte.io">A & A Consulting Limited</a>.</strong>
+    <strong>Copyright &copy; 2014 <a href="https://aaconsultingtech.com/" target="_blank">A & A Consulting Limited</a>.</strong>
     All rights reserved.
   </footer>
 
@@ -88,7 +88,7 @@
 <!-- AdminLTE App -->
 <script src="{{ asset('backend/dist/js/adminlte.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{ asset('backend/dist/js/demo.js') }}"></script>
+{{-- <script src="{{ asset('backend/dist/js/demo.js') }}"></script> --}}
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('backend/dist/js/pages/dashboard.js') }}"></script>
 </body>

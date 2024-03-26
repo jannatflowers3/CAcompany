@@ -12,7 +12,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="{{ url('/home') }}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -22,7 +22,7 @@
 
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('themeoptions.index') }}" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 ThemeOptions
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{route('slider.index')}}" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Slider
@@ -41,8 +41,25 @@
           </li>
          <li class="nav-item">
             <a href="#" class="nav-link">
-                <i class="nav-icon far fa-plus-square"></i>
-              <p> Home  Page</p> </a>
+              <i class="nav-icon fas fa-book"></i>
+              <p> Home Page <i class="fas fa-angle-left right"></i> </p> </a>
+
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{{route('homepage.whoweare')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Who We Are</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/profile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Meet Our Team</p>
+                  </a>
+                </li>
+
+
+              </ul>
          </li>
          <li class="nav-item">
             <a href="#" class="nav-link">
@@ -246,7 +263,7 @@
           </li> --}}
           <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->name }}
+                {{-- {{ Auth::user()->name }} --}}
             </a>
 
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

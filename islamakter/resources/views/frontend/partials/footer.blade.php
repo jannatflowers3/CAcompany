@@ -7,18 +7,18 @@
                     <div class="col-lg-4 col-md-7">
                         <div class="footer-widget">
                             <div class="fw-logo">
-                                <a href="index.html"><img src="{{ asset('frontend/assets/images/logo.png') }}"" alt="ISLAM AFTAB KAMRUL"></a>
+                                <a href="index.html"><img src="{{ asset('backendsite/images/'.$seeting->logo)}}" alt="ISLAM AFTAB KAMRUL logo"></a>
                             </div>
                             <div class="footer-content">
-                                <p>The firm is engaged in Auditing, Advisory Service to Foreign Investors, Accounting Consultancy, Socio & Agro economic Consultancy.</p>
+                                <p>{{$seeting->paragraph}}</p>
                                 <div class="footer-info">
                                     <ul class="list-wrap">
                                         <li>
                                             <div class="icon">
-                                                <i class="flaticon-phone-call"></i>
+                                                <i class="fa-solid fa-location-dot"></i>
                                             </div>
                                             <div class="content">
-                                                <a href="tel:0123456789">+88 01790 700 404</a>
+                                                <a href="#">{{$seeting->address}}</a>
                                             </div>
                                         </li>
                                         <li>
@@ -26,9 +26,7 @@
                                                 <i class="flaticon-clock"></i>
                                             </div>
                                             <div class="content">
-                                                <p>Sat – Thu: 09 am – 05 pm, <br> Friday: <span>CLOSED</span></p>
-
-
+                                                <p>{{$seeting->opening}}</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -73,11 +71,11 @@
                                 </form>
                                 <div class="footer-social footer-social-two">
                                     <ul class="list-wrap">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <i class="fa-brands fa-google-plus-g"></i>
-                                        <li><a href="https://www.youtube.com/watch?v=TSCWnPeuUMo"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="{{$seeting->facebook}} "><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="{{$seeting->twitter}}"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="{{$seeting->linkedin}}"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="{{$seeting->googleplus}}"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                        <li><a href=" {{$seeting->youtube}}"><i class="fab fa-youtube"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>ISLAM AFTAB KAMRUL &#038; CO. &#8211; Chartered Accountants</title>
-        <meta name="description" content="Gerow - Business Consulting HTML Template">
+        <title>{{$seeting->sitename}}</title>
+        <meta name="description" content="ISLAM AFTAB KAMRUL CO. Chartered Accountants">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/logo.png') }}"">
+		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/logo.png') }}">
         <!-- Place favicon.ico in the root directory -->
         <!-- CSS here -->
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}">
@@ -26,22 +25,7 @@
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/custom.css') }}">
     </head>
     <body>
-        <!-- preloader -->
 
-        <!-- <div id="preloader">
-            <div id="loading-center">
-                <div class="loader">
-                    <div class="loader-outter"></div>
-                    <div class="loader-inner"></div>
-                </div>
-            </div>
-        </div> -->
-        <!-- preloader-end -->
-
-		<!-- Scroll-top -->
-        <button class="scroll-top scroll-to-target" data-target="html">
-            <i class="fas fa-angle-up"></i>
-        </button>
         <!-- Scroll-top-end-->
         @include('frontend.partials.header')
         <!-- main-area  start-->
@@ -52,7 +36,7 @@
         </main>
         <!-- main-area-end -->
       @include('frontend.partials.footer')
-        <script src="https://kit.fontawesome.com/230a51e61c.js') }}" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/230a51e61c.js" crossorigin="anonymous"></script>
         <!-- JS here -->
         <script src="{{ asset('frontend/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
         <script src="{{ asset('frontend/assets/js/bootstrap.min.js') }}"></script>
@@ -74,7 +58,7 @@
         <script src="{{ asset('frontend/assets/js/aos.js') }}"></script>
         <script src="{{ asset('frontend/assets/js/wow.min.js') }}"></script>
         <!-- slider carousel -->
-        <script src="{{ asset('frontend/assets/js/owl.carousel.min.js') }}"></script>
+        {{-- <script src="{{ asset('frontend/assets/js/owl.carousel.min.js') }}"></script> --}}
         <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
 
     </body>
