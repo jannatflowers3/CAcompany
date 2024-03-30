@@ -16,13 +16,11 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-12 text-center">
                                         <div class="banner-content-two text-center">
-                                            {{-- <span class="sub-title" data-aos="fade-down" >We Are Expert In This Field</span> --}}
                                             <span class="sub-title" data-aos="fade-down" >{{$row->subheading}}</span>
-                                            {{-- <h2 class="title " data-aos="fade-up" data-aos-delay="0">We want to become trusted leader in the market.</h2> --}}
                                             <h2 class="title " data-aos="fade-up" data-aos-delay="0">{{$row->heading}}</h2>
-                                            <p data-aos="fade-up" class="sliderpara text-white" data-aos-delay="0"> We assist the investors how to maintain the Good governance, keep compliance and to ensure the local rules and regulations for doing the successful business. </p>
+                                            <p data-aos="fade-up" class="sliderpara text-white" data-aos-delay="0">{{$row->paragraph}} </p>
                                             <div class="banner-btn sliderbtn justify-content-center">
-                                                <a href="about.html" class="btn text-center" data-aos="fade-right" data-aos-delay="10">About Us</a>
+                                                <a href="{{url('company-profile')}}" class="btn text-center" data-aos="fade-right" data-aos-delay="10">{{$row->button_text}} </a>
 
                                             </div>
                                         </div>
@@ -107,37 +105,29 @@
                          <!-- image must be 247*247 -->
                         <img src="{{ asset('frontend/assets/images/whoweare.jpg') }}" alt="IAKCompanyInfo" >
                         <div class="experience-wrap" data-aos="fade-up" data-aos-delay="300">
-                            <h2 class="title">30 <span>Years</span></h2>
-                            <p>Of Experience in This Finance Advisory Company.</p>
+                            <h2 class="title">{{$whoweare->yearsparagraph}} <span>Years</span></h2>
+                            <p>{{$whoweare->years}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content-three">
                         <div class="section-title-two mb-20 tg-heading-subheading animation-style3">
-                            <span class="sub-title" data-aos="fade-down" data-aos-delay="100">Who We Are </span>
-                            <h2 class="title tg-element-title">IAK has significant exposure in providing taxation</h2>
+                            {{-- <span class="sub-title" data-aos="fade-down" data-aos-delay="100">Who We Are </span> --}}
+                            <span class="sub-title" data-aos="fade-down" data-aos-delay="100">{{$whoweare->subheading}} </span>
+
+                            <h2 class="title tg-element-title">{{$whoweare->heading}} </h2>
                         </div>
-                        <p class="info-one" >Islam Aftab Kamrul & Co., Chartered Accountants (IAK) was Established in 1993, under
-                            The Institute of Chartered Accountants of Bangladesh (ICAB) with a mission to continually adding value by
-                             helping clients succeed under the firm’s name and style of Islam Aftab Kamrul & Co., Chartered Accountants
-                              (IAK). Initially, two founding partners (Senior Fellow members of the Institute of Chartered Accountants
-                               of Bangladesh – (ICAB)) started their independent practice as public accountants and the firm is in public
-                                practice for more than 29 years. The then largest partnership firm was founded with a vision to build an
-                                 institution which would foster an environ- ment for leadership, continuous growth, learning,
-                                 and collaborations.</p>
+                        <p class="info-one" >{{$whoweare->paragraph}} </p>
                         <div class="about-list-two">
                             <ul class="list-wrap " >
-                                <li><i class="fas fa-arrow-right"></i>CA Qualiffied Consultant</li>
-                                <li><i class="fas fa-arrow-right"></i>IT Consultant</li>
-                                <li><i class="fas fa-arrow-right"></i>Business & Corporate Advisory</li>
-                                <li><i class="fas fa-arrow-right"></i>Taxation & VAT Service</li>
+                                <li><i class="fas fa-arrow-right"></i>{{$whoweare->list1}} </li>
+                                <li><i class="fas fa-arrow-right"></i>{{$whoweare->list2}}</li>
+                                <li><i class="fas fa-arrow-right"></i>{{$whoweare->list3}}</li>
+                                <li><i class="fas fa-arrow-right"></i>{{$whoweare->list4}}</li>
                             </ul>
                         </div>
-                        <p class="" data-aos="fade-up" data-aos-delay="100">Over the past the firm has become one of the leading and most
-                            reputable chartered accountancy firms in Bangladesh with global affiliations. At present, IAK has four partners whose expertise in
-                            audit, accounting, review, business consulting, business process outsourcing, technology solutions and taxation has established the
-                            firm as a multidisciplinary organization.</p>
+                        <p class="" data-aos="fade-up" data-aos-delay="100">{{$whoweare->bottomparagraph}}</p>
 
                     </div>
                 </div>

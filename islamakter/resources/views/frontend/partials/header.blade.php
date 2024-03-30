@@ -141,9 +141,9 @@
                                                         <ul class="mega-sub-menu">
                                                             <li class="active"><a href="{{url('newsletter')}}">Newsletter</a></li>
                                                             <li><a href="{{url('blog')}}" >Blog</a></li>
-                                                            <li><a href="publication.html" >Publications</a></li>
-                                                            <li><a href="gallery.html" >Gallery</a></li>
-                                                            <li><a href="event.html" >Events</a></li>
+                                                            <li><a href="{{url('publications')}}" >Publications</a></li>
+                                                            <li><a href="{{url('gallery')}}" >Gallery</a></li>
+                                                            <li><a href="{{url('event')}}" >Events</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
@@ -158,14 +158,14 @@
                                                 <ul class="sub-menu ">
                                                     <li>
                                                         <ul class="mega-sub-menu">
-                                                            <li class="active"><a href="professional.html" >Professional</a></li>
-                                                              <li class=""><a href="articleship.html" >Articleship</a></li>
+                                                            <li class="active"><a href="{{url('professional')}}" >Professional</a></li>
+                                                              <li class=""><a href="{{url('articleship')}}" >Articleship</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="regulators.html">Regulators</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="{{url('regulators')}}">Regulators</a></li>
+                                            <li><a href="{{url('contactus')}}">Contact Us</a></li>
                                         </ul>
                                     </div>
                                     <div class="header-action   d-none d-xl-block">

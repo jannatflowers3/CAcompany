@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-content">
-                    <h2 class="title" data-aos="fade-down" data-aos-delay="0">Affiliation</h2>
+                    <h2 class="title" data-aos="fade-down" data-aos-delay="0"> {{$affiliationdata->affiliation_title}}</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb"  data-aos="fade-up" data-aos-delay="0">
                             <li class="breadcrumb-item"><a href="index.html" >Home</a></li>

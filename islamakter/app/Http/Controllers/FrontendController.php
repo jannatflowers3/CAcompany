@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ThemeOptions;
 use Illuminate\Http\Request;
-
+use App\Models\aboutus\Affiliationmembershop;
 class FrontendController extends Controller
 {
 
@@ -17,10 +17,11 @@ class FrontendController extends Controller
         $seeting = ThemeOptions::findOrFail(1);
         return view('frontend.pages.aboutus.meetourteam',compact('seeting'));
     }
-    public function affiliation()
+    public function affiliation(Request $request)
     {
         $seeting = ThemeOptions::findOrFail(1);
-        return view('frontend.pages.aboutus.affiliation',compact('seeting'));
+        $affiliationdata = Affiliationmembershop::find($request->id);
+        return view('frontend.pages.aboutus.affiliation',compact('seeting','affiliationdata'));
     }
     public function enlistment()
     {
@@ -98,6 +99,41 @@ class FrontendController extends Controller
     {
         $seeting = ThemeOptions::findOrFail(1);
         return view('frontend.pages.media.blog',compact('seeting'));
+    }
+    public function publications()
+    {
+        $seeting = ThemeOptions::findOrFail(1);
+        return view('frontend.pages.media.publications',compact('seeting'));
+    }
+    public function gallery()
+    {
+        $seeting = ThemeOptions::findOrFail(1);
+        return view('frontend.pages.media.gallery',compact('seeting'));
+    }
+    public function event()
+    {
+        $seeting = ThemeOptions::findOrFail(1);
+        return view('frontend.pages.media.event',compact('seeting'));
+    }
+    public function professional()
+    {
+        $seeting = ThemeOptions::findOrFail(1);
+        return view('frontend.pages.career.professional',compact('seeting'));
+    }
+    public function articleship()
+    {
+        $seeting = ThemeOptions::findOrFail(1);
+        return view('frontend.pages.career.articleship',compact('seeting'));
+    }
+    public function regulators()
+    {
+        $seeting = ThemeOptions::findOrFail(1);
+        return view('frontend.regulators',compact('seeting'));
+    }
+    public function contactus()
+    {
+        $seeting = ThemeOptions::findOrFail(1);
+        return view('frontend.contactus',compact('seeting'));
     }
 
 }

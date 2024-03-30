@@ -30,7 +30,7 @@
 <div class="row align-items-center justify-content-center">
     <div class="col-lg-6 col-md-9 order-0 order-lg-2">
         <div class="about-img-wrap-eleven">
-            <img src="{{ asset('frontend/assets/images/services/secretarial-compliance-report..jpg')}}" alt="Business Services">
+            <img src="{{ asset('frontend/assets/images/services/secretarial-compliance-report.jpg')}}" alt="Business Services">
             <img src="{{ asset('frontend/assets/img/images/inner_about_shape01.png')}}" alt="Business Services" class="shape-one">
             <img src="{{ asset('frontend/assets/img/images/inner_about_shape02.png')}}" alt="Business Services" class="shape-two">
         </div>

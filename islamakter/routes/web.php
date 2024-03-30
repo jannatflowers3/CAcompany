@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\aboutus\AffiliationMembership;
 use App\Http\Controllers\backend\BackendHome;
 use App\Http\Controllers\backend\homepage\WhoweareController;
 use App\Http\Controllers\backend\SliderController;
@@ -60,6 +61,13 @@ Route::get('/japanese-client', [FrontendController::class, 'japaneseclient']);
 // media page start
 Route::get('/newsletter', [FrontendController::class, 'newsletter']);
 Route::get('/blog', [FrontendController::class, 'blog']);
+Route::get('/publications', [FrontendController::class, 'publications']);
+Route::get('/gallery', [FrontendController::class, 'gallery']);
+Route::get('/event', [FrontendController::class, 'event']);
+Route::get('/professional', [FrontendController::class, 'professional']);
+Route::get('/articleship', [FrontendController::class, 'articleship']);
+Route::get('/regulators', [FrontendController::class, 'regulators']);
+Route::get('/contactus', [FrontendController::class, 'contactus']);
 
 /*********************** backend  route *******************
   ****************************************************************/
@@ -81,8 +89,11 @@ Route::get('/blog', [FrontendController::class, 'blog']);
   Route::get('/whoweare', [WhoweareController::class, 'index'])->name('homepage.whoweare');
   Route::post('/whoweare/update', [WhoweareController::class, 'update'])->name('whoweare.update');
 
-//   Route::get('/slider/create', [SliderController::class, 'create'])->name('slider.create');
-//   Route::post('/slider/store', [SliderController::class, 'store'])->name('slider.store');
-//   Route::get('/slider/edit/{id}', [SliderController::class, 'edit'])->name('slider.edit');
-//   Route::post('/slider/update/{id}', [SliderController::class, 'update'])->name('slider.update');
-//   Route::get('/slider/delete/{id}', [SliderController::class, 'destroy'])->name('slider.delete');
+  /*********************** About Us Page design route *******************
+  ****************************************************************/
+  Route::get('/affiliationbackend', [AffiliationMembership::class, 'affiliationindex'])->name('affiliation.index');
+  Route::get('/affiliation/create', [AffiliationMembership::class, 'affiliationcreate'])->name('affiliation.create');
+  Route::post('/affiliation/store', [AffiliationMembership::class, 'affiliationstore'])->name('affiliation.store');
+  Route::get('/affiliation/edit/{id}', [AffiliationMembership::class, 'affiliationedit'])->name('affiliation.edit');
+  Route::post('/affiliation/update/{id}', [AffiliationMembership::class, 'affiliationupdate'])->name('affiliation.update');
+  Route::get('/affiliation/delete/{id}', [AffiliationMembership::class, 'affiliationdestroy'])->name('affiliation.delete');

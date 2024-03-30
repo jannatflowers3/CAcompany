@@ -43,7 +43,7 @@ class SliderController extends Controller
         $dataslider->heading = $request->heading;
         $dataslider->paragraph = $request->paragraph;
         $dataslider->button_text = $request->button_text;
-        $dataslider->type = 1;
+      
 
         // $dataslider->slideimage = $request->slideimage;
         // if($request->file('slideimage')){

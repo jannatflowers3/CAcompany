@@ -41,14 +41,14 @@
                         </div>
                         <div class="form-group">
                             <label for="heading">Heading </label>
-                            <input type="text" class="form-control" id="heading" name="heading">
+                            <input type="text" class="form-control" id="heading" name="heading" value="{{$whoweare->heading}}">
                           </div>
                         <div class="form-group">
                           <label for="paragraph">paragraph</label>
-                          <input type="text" class="form-control" id="paragraph" name="paragraph">
+                          <input type="text" class="form-control" id="paragraph" name="paragraph" value="{{$whoweare->paragraph}}">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">Who We Are Image </label>
+                            <label for="exampleInputFile">Who We Are Image 1</label>
                             <div class="input-group">
                               <div class="custom-file">
                                 <input type="file" class="custom-file-input" id="image1" name="image1">
@@ -78,31 +78,34 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="list1">List Text 1</label>
-                        <input type="text" class="form-control" id="list1" name="list1" >
+                        <input type="text" class="form-control" id="list1" name="list1" value="{{$whoweare->list1}}">
                       </div>
                       <div class="form-group">
                         <label for="list2">List Text 2</label>
-                        <input type="text" class="form-control" id="list2" name="list2" >
+                        <input type="text" class="form-control" id="list2" name="list2"  value="{{$whoweare->list2}}">
                       </div>
                       <div class="form-group">
                         <label for="list3">List Text 3</label>
-                        <input type="text" class="form-control" id="list3" name="list3" >
+                        <input type="text" class="form-control" id="list3" name="list3" value="{{$whoweare->list3}}">
                       </div>
                       <div class="form-group">
                         <label for="list4">List Text 4</label>
-                        <input type="text" class="form-control" id="list4" name="list4" >
+                        <input type="text" class="form-control" id="list4" name="list4" value="{{$whoweare->list4}}">
                       </div>
                       <div class="form-group">
                         <label for="bottomparagraph">Bottom Paragraph</label>
-                        <input type="text" class="form-control" id="bottomparagraph" name="bottomparagraph" >
+
+                        <input type="text" class="form-control" id="bottomparagraph" name="bottomparagraph" value="{{$whoweare->bottomparagraph}}" >
                       </div>
                       <div class="form-group">
-                        <label for="yearsparagraph">Years</label>
-                        <input type="text" class="form-control" id="yearsparagraph" name="yearsparagraph" >
-                      </div>
+                        <label for="years">Years</label>
+                        <input type="text" class="form-control" id="yearsparagraph" name="yearsparagraph" value="{{$whoweare->yearsparagraph}}" >
+
+                    </div>
                       <div class="form-group">
-                        <label for="years">Years Text</label>
-                        <input type="number" class="form-control" id="years" name="years" >
+                        <label for="yearsparagraph">Years Text</label>
+
+                        <input type="text" class="form-control" id="years" name="years" value="{{$whoweare->years}}" >
                       </div>
                 </div>
             </div>
